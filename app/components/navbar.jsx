@@ -1,0 +1,60 @@
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+
+const Navbar = () => {
+  const pathname = usePathname();
+
+  const links = [
+    { name: 'Home', path: '/' },
+    { name: 'Sell your Car', path: '/sellcar' },
+    { name: 'Apply for a New Car', path: '/apply' },
+    { name: 'Beat my Offer', path: '/beat-offer' },
+    { name: 'About us', path: '/about' },
+    { name: 'Faq', path: '/faq' },
+    { name: 'Kelley Blue Book', path: '/kbb' },
+    { name: 'Media', path: '/media' },
+  ];
+
+  return (
+    <header className="navbar">
+      <div className="navbar-logo">
+        <div>
+    <Image src="/logo.png" width={60} height={60} alt="Company Logo" className='nav-logo' />
+        </div>
+        <div>
+        <Link href="/" className="brand">
+          car<span className="highlight">trackers</span>
+        </Link>
+        </div>
+      </div>
+      <nav className="navbar-links">
+        <ul>
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link
+                href={link.path}
+                className={`nav-link ${pathname === link.path ? 'active' : ''}`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link href="/offer">
+              <button className="btn-outline">Get Offer</button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <button className="btn-filled">Contact Us</button>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

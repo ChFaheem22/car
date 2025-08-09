@@ -1,0 +1,226 @@
+.back{
+  background-image: url(/sellcar/sell.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  
+}
+
+.herosection {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.herosection h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+
+.herosection p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.sellSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.leftBox {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+.stepTag {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.sellTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sellDesc {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.sellNote {
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.photoList {
+  padding-left: 20px;
+  margin-top: 6px;
+  color: black;
+  font-weight: bold;
+}
+
+.photoList li{
+  margin-left: 100px;
+  padding: 14px;
+}
+
+.photoList li::marker {
+  color: #ff6600;
+  font-size: 30px;
+}
+
+.formBox {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.grid{
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldGroup label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.fieldGroup input[type="text"],
+.fieldGroup input[type="email"],
+.fieldGroup input[type="tel"],
+.fieldGroup input[type="number"],
+.fieldGroup input[type="file"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.submitBtn {
+  padding: 12px 28px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #af4f0f;
+}
+
+/* paid section */
+.getPaidSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 4px;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.textColumn {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #000000;
+  color: #fff;
+  padding: 60px;
+}
+
+.tag{
+  color: #fc7317;
+}
+
+.step{
+  font-size: 37px;
+  margin-bottom: 0px;
+}
+
+.details{
+  width: 400px;
+}
+
+.imageBoxTop {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.imageBoxBottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faqBox {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 80px;
+}
+
+.faqtag{
+  color: #fc7317;
+  font-size: 12px;
+}
+
+.faqTitle{
+  font-size: 28px;
+}
+
+
+.faqList li::marker {
+  color: #ff6600;
+  font-size: 30px;
+}
+
+
+.quoteBtn {
+  background-color: #fc7317;
+  color: white;
+  padding: 14px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quoteBtn:hover {
+  background-color: #e65c00;
+}
