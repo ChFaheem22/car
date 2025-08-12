@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import Payment from "../components/payment";
 import styles from "./offer.module.css";
 import Image from "next/image";
 import {
@@ -83,28 +84,8 @@ const offer = () => {
         </div>
         <button className={styles.button}>Next →</button>
       </section>
-
-      <div className={styles.payment}>
-        <div className={ styles.paymentbio}>
-          <h1>
-            <span>GOT QUESTIONS?</span>
-          </h1>
-          <p>
-            Give us a call and we ll walk you through everything
-          </p>
-          <button className={styles.paymentbutton}>
-            <span>+GET IN TOUCH</span></button>
-        </div>
-        <div className={styles.paymentrightlogo}>
-          <Image
-            src="/logo-bio.png"
-            width={220}
-            height={200}
-            alt="Company Logo"
-          />
-        </div>
-      </div>
-
+      <Payment/>
+      
     </div>
   );
 };

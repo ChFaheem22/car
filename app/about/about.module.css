@@ -248,3 +248,14 @@
 .formbutton:hover{
   background-color: #f08437;
 }
+
+@media (max-width: 768px) {
+  .jobDescription{
+    width: 340px;
+  }
+  .description{
+    text-align: justify;
+    width: 90%;
+    margin-left: 34px;
+  }
+}

@@ -150,3 +150,10 @@
   width: 30%;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .logoBox{
+    margin: auto;
+    padding-left: 50vh;
+  }
+}

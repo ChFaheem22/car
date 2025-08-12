@@ -27,7 +27,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
       <Partner />
 
       <section className={styles.careersSection}>

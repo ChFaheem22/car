@@ -5,46 +5,41 @@
   padding: 10px 20px;
   background: rgba(56, 51, 51, 0.336);
   color: white;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   overflow-x: hidden;
   font-size: 13.4px;
 }
 
-/* Logo Styling */
-.navbar-logo  {
+.navbar-left {
   display: flex;
   align-items: center;
-}
-
-.brand{
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 70px;        
-  vertical-align: middle;
-  margin-left: -10px;
-}
-
-.navbar-logo{
-   width: 70px;
+  width: 70px;
   height: 70px;
   opacity: 0.85;
   margin-left: 70px;
 }
 
-.nav-logo{
+.nav-logo {
   margin: 0px 10px;
   opacity: 1;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 70px;
+  vertical-align: middle;
+  margin-left: -10px;
 }
 
 .highlight {
   color: #d0d1d3;
 }
 
-/* Links */
-.navbar-links ul {
+.menu-links ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +61,6 @@
   color: orange;
 }
 
-/* Buttons */
 .btn-outline,
 .btn-filled {
   padding: 10px 20px;
@@ -94,6 +88,12 @@
   background-color: transparent;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  user-select: none;
+}
 /* footer */
 
 .footer-wrapper {
@@ -263,7 +263,7 @@
 }
 
 .hero{
-  background-image: url(../public/page.jpg); /* Replace with actual path */
+  background-image: url(../public/page.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,12 +370,10 @@
 }
 
 .box {
-  background-color: #fff;
   padding: 30px 25px;
   border-radius: 10px;
   width: 300px;
 }
-
 
 .box h3 {
   font-size: 18px;
@@ -1066,3 +1064,284 @@ font-size: 13px;
   position: relative;
   z-index: 1;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* media*/
+@media (max-width: 768px) {
+  /* Navbar  */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-left {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    user-select: none;
+    padding-left: 74vh;
+  }
+
+  /* Mobile Menu */
+  .menu-links {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .menu-links.open {
+    display: block;
+  }
+  .menu-links ul {
+    display: flex; /* needed for flex-direction */
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu-links li {
+    width: 100%;
+  }
+  .menu-links a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  /* Support Banner */
+  .support-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .support-email {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .arrow-button {
+    margin: 20px 0 0 0;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .footer-left {
+    margin-left: 0;
+  }
+  .footer-links {
+    min-width: unset;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .social-icons {
+    margin-left: 0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 22vh;
+    top: 14%;
+    left: 10%;
+  }
+  .hero-section h1 {
+    font-size: 28px;
+  }
+  .hero-section p {
+    font-size: 14px;
+  }
+
+  .car-form,
+  .how-work {
+    position: static;
+    width: 80%;
+    margin-top: 44vh;
+    margin-left: 10vh;
+    color: #fff;
+  }
+  .how-work {
+    width: 90%;
+  }
+  .car-form,
+  .form-group input{
+    background: transparent;
+    backdrop-filter: blur(2px);
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .box {
+    width: 100%;
+  }
+
+  /* Video Appraisal Section */
+  .video-appraisal {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+  .headline {
+    margin-left: 0;
+    text-align: center;
+  }
+  .section-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* Captions */
+  .captions-shopping {
+    flex-direction: row;
+    text-align: center;
+  }
+  .cap-left-logo {
+    display: none;
+  }
+  
+  .cap-right-logo{
+    margin: 10px auto;
+    height: auto;
+    width: auto;
+  }
+
+  .cap-bio {
+    margin: 20px auto;
+  }
+
+  /* Payment Section */
+  .payment-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .payment-left {
+    margin-left: 0;
+  }
+  .payment-options {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .payment-card {
+    max-width: 100%;
+  }
+
+  /* Reviews */
+  .review-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-card {
+    max-width: 100%;
+  }
+
+  /* Stats */
+  .stats-section {
+    padding: 2rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .stat-card h4 {
+    font-size: 24px;
+  }
+
+  /* Partners */
+  .paymentbutton {
+    margin: 10px auto;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .partners-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .partner-card {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .partner-icon {
+    font-size: 28px;
+  }
+
+  .partner-name {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .faq-qs {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Captions Row */
+  .captions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .left-logo img,
+  .right-logo img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .bio {
+    flex: 1;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  /* Payment Row */
+  .payment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+  }
+  .paymentrightlogo img {
+    max-width: 80px;
+    height: auto;
+    margin: 0px;
+  }
+  .paymentbio {
+    flex: 1;
+    font-size: 14px;
+    margin: 0 10px;
+    padding-left: 40px;
+  }
+  .paymentbutton {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: auto;
+    margin: 10px auto;
+    justify-content: center;
+  }
+}
+

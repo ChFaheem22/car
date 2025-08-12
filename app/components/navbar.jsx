@@ -2,9 +2,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   const links = [
     { name: 'Home', path: '/' },
@@ -19,35 +21,42 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <div className="navbar-logo">
-        <div>
-    <Image src="/logo.png" width={60} height={60} alt="Company Logo" className='nav-logo' />
+      <div className="navbar-left">
+        <div className="navbar-logo">
+          <Image src="/logo.png" width={60} height={60} alt="Company Logo" className="nav-logo" />
         </div>
         <div>
         <Link href="/" className="brand">
           car<span className="highlight">trackers</span>
         </Link>
         </div>
+
+        {/* Hamburger Button */}
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </div>
       </div>
-      <nav className="navbar-links">
+
+      <nav className={`menu-links ${isOpen ? 'open' : ''}`}>
         <ul>
           {links.map((link, index) => (
             <li key={index}>
               <Link
                 href={link.path}
                 className={`nav-link ${pathname === link.path ? 'active' : ''}`}
+                onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             </li>
           ))}
           <li>
-            <Link href="/offer">
+            <Link href="/offer" onClick={() => setIsOpen(false)}>
               <button className="btn-outline">Get Offer</button>
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="/contact" onClick={() => setIsOpen(false)}>
               <button className="btn-filled">Contact Us</button>
             </Link>
           </li>

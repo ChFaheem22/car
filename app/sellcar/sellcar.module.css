@@ -224,3 +224,23 @@
 .quoteBtn:hover {
   background-color: #e65c00;
 }
+
+@media (max-width: 768px) {
+  .getPaidSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageBoxTop,
+  .imageBoxBottom {
+    width: 100%;
+  }
+
+  .imageBoxTop img,
+  .imageBoxBottom img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+

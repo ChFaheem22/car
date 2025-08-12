@@ -45,7 +45,6 @@ const page = () => {
     { label: "Expert Team Members", value: "180+", icon: <FaUsers /> },
   ];
 
-
   const brands = [
     { name: "Audi", logo: "/cars/audi.png" },
     { name: "Jaguar", logo: "/cars/jaguar.png" },
@@ -55,29 +54,29 @@ const page = () => {
   ];
 
   const blogPosts = [
-  {
-    title: "Efficient repairs, reliable Results, every time here",
-    date: "15 MAY",
-    author: "Malen",
-    comments: 3,
-    image: "/worker-1.jpg",
-  },
-  {
-    title: "We’ll get your car back on the road",
-    date: "15 MAY",
-    author: "Malen",
-    comments: 3,
-    image: "/worker-2.jpg",
-  },
-  {
-    title: "Quality repairs for your car at affordable prices",
-    date: "15 MAY",
-    author: "Malen",
-    comments: 3,
-    image: "/worker-3.jpg",
-  },
-];
- 
+    {
+      title: "Efficient repairs, reliable Results, every time here",
+      date: "15 MAY",
+      author: "Malen",
+      comments: 3,
+      image: "/worker-1.jpg",
+    },
+    {
+      title: "We’ll get your car back on the road",
+      date: "15 MAY",
+      author: "Malen",
+      comments: 3,
+      image: "/worker-2.jpg",
+    },
+    {
+      title: "Quality repairs for your car at affordable prices",
+      date: "15 MAY",
+      author: "Malen",
+      comments: 3,
+      image: "/worker-3.jpg",
+    },
+  ];
+
   return (
     <div className="home">
       <div className="hero">
@@ -198,7 +197,8 @@ const page = () => {
           </h1>
           <p>
             We can do videocall appraisal to purchase your vehicle from the
-            convenience of your home, or anywhere you have signal. Our<br />
+            convenience of your home, or anywhere you have signal. Our
+            <br />
             licensed appraisers will handle everything from paperwork to
             payment.
           </p>
@@ -306,7 +306,7 @@ const page = () => {
         </div>
       </section>
 
-      <Partner/>
+      <Partner />
 
       <section className="hero-vehicle-banner">
         <div className="hero-vehicle-overlay">
@@ -319,8 +319,8 @@ const page = () => {
                 <Image
                   src={logo}
                   alt={`${name} logo`}
-                  width={60}
-                  height={60}
+                  width={140}
+                  height={100}
                   className="hero-vehicle-logo"
                 />
               </li>
@@ -329,41 +329,40 @@ const page = () => {
         </div>
       </section>
 
-    <section className='faq-section'>
-      <div className='faq-header'>
-      <h4 className='faq-head'>FAQs</h4>
-      <h1>Frequently Asked Questions</h1>
-      </div>
-      <div className="faq-qs">
-  <label className="faq-question">
-    How quickly can I get paid?
-    <span className="icon">+</span>
-  </label>
+      <section className="faq-section">
+        <div className="faq-header">
+          <h4 className="faq-head">FAQs</h4>
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        <div className="faq-qs">
+          <label className="faq-question">
+            How quickly can I get paid?
+            <span className="icon">+</span>
+          </label>
 
-  <label className="faq-question">
-    Do I need to drive my car anywhere?
-    <span className="icon">+</span>
-  </label>
+          <label className="faq-question">
+            Do I need to drive my car anywhere?
+            <span className="icon">+</span>
+          </label>
 
-  <label className="faq-question">
-    How does the video call appraisal process work?
-    <span className="icon">+</span>
-  </label>
+          <label className="faq-question">
+            How does the video call appraisal process work?
+            <span className="icon">+</span>
+          </label>
 
-  <label className="faq-question">
-    Is there any cost or obligation to get an offer?
-    <span className="icon">+</span>
-  </label>
+          <label className="faq-question">
+            Is there any cost or obligation to get an offer?
+            <span className="icon">+</span>
+          </label>
 
-  <label className="faq-question">
-    What do I do after I get an online offer?
-    <span className="icon">+</span>
-  </label>
-</div>
+          <label className="faq-question">
+            What do I do after I get an online offer?
+            <span className="icon">+</span>
+          </label>
+        </div>
+      </section>
 
-    </section>
-
-    <section className="captions-shopping">
+      <section className="captions-shopping">
         <div className="cap-left-logo">
           <Image
             src="/logo-bio.png"
@@ -373,12 +372,11 @@ const page = () => {
           />
         </div>
         <div className="cap-bio">
-          <h1>
-            SHOPPING AROUND? WE PAY THE MOST!
-          </h1>
+          <h1>SHOPPING AROUND? WE PAY THE MOST!</h1>
           <p>
-            We beat most dealership offers by up to $500*. Send over a valid written
-            offer and we can pay <br />you top dollar thanks to our low overhead.
+            We beat most dealership offers by up to $500*. Send over a valid
+            written offer and we can pay <br />
+            you top dollar thanks to our low overhead.
           </p>
         </div>
         <div className="cap-right-logo">
@@ -389,38 +387,39 @@ const page = () => {
             alt="Company Logo"
           />
         </div>
-    </section>
+      </section>
 
-    <section className="blog-section">
-  <p className="blog-subheading">BLOGS</p>
-  <h2 className="blog-heading">Latest Blog & News</h2>
-  <div className="blog-grid">
-    {blogPosts.map(({ title, author, comments, image, date }, i) => (
-      <div key={i} className="blog-card">
-        <div className="blog-image-wrapper">
-          <Image
-            src={image}
-            width={300}
-            height={180}
-            alt={title}
-            className="blog-image"
-          />
-          <span className="blog-date">{date}</span>
-
+      <section className="blog-section">
+        <p className="blog-subheading">BLOGS</p>
+        <h2 className="blog-heading">Latest Blog & News</h2>
+        <div className="blog-grid">
+          {blogPosts.map(({ title, author, comments, image, date }, i) => (
+            <div key={i} className="blog-card">
+              <div className="blog-image-wrapper">
+                <Image
+                  src={image}
+                  width={300}
+                  height={180}
+                  alt={title}
+                  className="blog-image"
+                />
+                <span className="blog-date">{date}</span>
+              </div>
+              <div className="blog-content">
+                <div className="blog-meta">
+                  <strong>Post by </strong>
+                  <span>{author}</span>{" "}
+                  <span className="comments"> {comments} Comments</span>
+                </div>
+                <h3 className="blog-title">{title}</h3>
+                <a href="#" className="blog-readmore">
+                  <span>RE</span>AD MORE <span className="blog-arrow">→</span>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="blog-content">
-          <div className="blog-meta">
-            <strong>Post by </strong><span>{author}</span>  <span className='comments'> {comments} Comments</span>
-          </div>
-          <h3 className="blog-title">{title}</h3>
-          <a href="#" className="blog-readmore"><span>RE</span>AD MORE <span className='blog-arrow'>→</span></a>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
-
+      </section>
     </div>
   );
 };
