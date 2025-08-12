@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
+import Partner from "../components/partner";
 import Payment from "../components/payment";
 import styles from "./offer.module.css";
-import Image from "next/image";
 import {
   FaIndustry,
   FaTools,
@@ -33,17 +33,7 @@ const offer = () => {
         </div>
       </div>
 
-      <section className="partners-section">
-        <p className="partners-head">OUR PARTNERS & SUPPORTS</p>
-        <ul className="partners-grid">
-          {partners.map(({ name, icon }, i) => (
-            <li key={i} className="partner-card">
-              <div className="partner-icon">{icon}</div>
-              <p className="partner-name">{name}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <Partner/>
 
       <section className={styles.container}>
         <p className={styles.para}>GET AN OFFER</p>
