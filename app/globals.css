@@ -1104,7 +1104,7 @@ html, body {
   }
   .menu-links.open {
     display: block;
-    animation: slideDown 0.2s ease;
+    transition: all 2s ease-in;
   }
   .menu-links ul {
     flex-direction: column;
@@ -1118,6 +1118,9 @@ html, body {
   .menu-links a {
     display: block;
     padding: 0.5rem 0;
+  }
+  .btn-filled{
+    margin-left: 70px;
   }
 
   /* Footer */
@@ -1141,7 +1144,9 @@ html, body {
     flex-direction: column;
     gap: 16px;
   }
-  
+  .hero-vehicle-brand-item{
+    display: none;
+  }
   .social-icons{
     margin-left: 0;
     min-width: unset;
@@ -1150,9 +1155,8 @@ html, body {
     gap: 16px;
   }
 
-  /* Hero / Absolute Sections */
+ 
   .hero-section,
-  .car-form,
   .how-work {
     position: static !important;
     top: 50% !important;
@@ -1162,6 +1166,7 @@ html, body {
     padding: 0 10px !important;
     text-align: center;
   }
+
   .hero-section h1 { font-size: 24px; }
   .hero-section p { font-size: 13px; }
 
@@ -1170,7 +1175,6 @@ html, body {
   .payment-container,
   .review-row,
   .stats-grid,
-  .partners-grid,
   .blog-grid {
     flex-direction: column !important;
     gap: 16px !important;
@@ -1178,9 +1182,15 @@ html, body {
     margin: 0 !important;
     width: 100% !important;
   }
+  .partners-grid{
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    width: 0% !important;
+  }
   .faq-qs { margin-left: 0 !important; width: 100% !important; }
 
-  /* Misc */
   .bio, .paymentbio, .cap-bio {
     margin: 0 !important;
     padding: 10px !important;
@@ -1195,5 +1205,8 @@ html, body {
     max-width: 60px !important;
     height: auto !important;
     margin: 0 !important;
+  }
+  .paymentbutton span{
+    width: 140px;
   }
 }

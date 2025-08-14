@@ -200,3 +200,85 @@
 .cta:hover {
   background-color: #f77519;
 }
+
+@media (max-width: 768px) {
+  /* Hero Section */
+  
+  .herosection h1 {
+    font-size: 5vh;
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 16px;
+  }
+
+  /* Slider */
+  .slider {
+    height: auto;
+    padding-bottom: 40px;
+    min-height: 50vh;
+  }
+  .heading {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  .subheading {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .imageWrapper {
+    width: 98vw;
+    height: 38vh;
+    border-radius: 16px;
+  }
+  .image {
+    width: 100%;
+    height: 38vh;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  .overlay {
+    font-size: 90%;
+    padding: 0 12px;
+  }
+  .playButton {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+  .prev, .next {
+    font-size: 1.4rem;
+    padding: 8px;
+    top: 48%;
+  }
+  .prev { left: 8px; }
+  .next { right: 8px; }
+
+  .dots {
+    gap: 6px;
+    bottom: 12px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .content {
+    max-width: 98vw;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  .head {
+    font-size: 0.9rem;
+    margin-top: 5vh;
+    margin-bottom: 2px;
+  }
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .cta {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}
