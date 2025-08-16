@@ -225,15 +225,61 @@
 .quoteBtn:hover {
   background-color: #e65c00;
 }
-
 @media (max-width: 768px) {
+  .herosection h1 { font-size: 28px; }
+  .herosection p { font-size: 14px; }
+
+  .sellSection {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 16px;
+  }
+
+  .leftBox {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .photoList li {
+    margin-left: 20px !important;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fieldGroup input,
+  .fieldGroup select,
+  .fieldGroup textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .submitBtn {
+    width: 90%;
+    margin: 10px;
+  }
+
+  /* Paid Section */
   .getPaidSection {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 30px 16px;
   }
-  .details
-  {
-    width: 100% ;
+
+  .textColumn {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .details {
+    width: 100% !important;
   }
 
   .imageBoxTop,
@@ -241,15 +287,11 @@
     width: 100%;
   }
 
-  .imageBoxTop img,
-  .imageBoxBottom img {
-    width: 100%;
-    height: auto;
-    display: block;
+  .faqBox {
+    padding: 20px;
+    text-align: left;
   }
-  .grid{
-    display: flex;
-    flex-direction: column;
-  }
-}
 
+  .faqTitle { font-size: 20px; }
+  .faqtag { font-size: 10px; }
+}

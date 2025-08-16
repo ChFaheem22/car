@@ -100,7 +100,7 @@
   width: 100%;
   background: #111;
   color: #ccc;
-  font-family: 'Orbitron',  sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .support-banner {
@@ -113,7 +113,7 @@
   flex-wrap: wrap;
 }
 
-.support-email{
+.support-email {
   padding: 40px 30px;
 }
 
@@ -147,7 +147,6 @@
   transition: background 0.3s;
   margin-right: 15vh;
 }
-
 
 /* --- Main Footer --- */
 .footer {
@@ -184,7 +183,7 @@
   max-width: 300px;
   text-align: justify;
 }
-.logo span{
+.logo span {
   margin-left: -10px;
   color: rgb(236, 235, 235);
   font-size: 21px;
@@ -233,7 +232,7 @@
   transition: color 0.3s;
 }
 
-.footer-bottom p{
+.footer-bottom p {
   font-size: 12px;
 }
 
@@ -241,7 +240,6 @@
   flex: 1;
   margin-top: 10px;
 }
-
 
 .social-icons {
   display: flex;
@@ -261,7 +259,7 @@
   color: #f90;
 }
 
-.hero{
+.hero {
   background-image: url(../public/page.jpg);
   background-size: cover;
   background-position: center;
@@ -296,7 +294,7 @@
 .car-form {
   position: absolute;
   top: 24%;
-  right: 10%;
+  right: 8%;
   background-color: #fff;
   color: #000;
   padding: 30px;
@@ -340,7 +338,7 @@
 /* How it works */
 .how-work {
   position: absolute;
-  top: 120%;   /* Adjust this to move it vertically */
+  top: 120%;
   left: 18%;
   margin-top: -10px;
   margin-bottom: 30px;
@@ -393,7 +391,7 @@
 }
 
 /* 10 mint video*/
-body{
+body {
   background-color: #f7f5f5;
 }
 .video-appraisal {
@@ -467,42 +465,42 @@ body{
 }
 
 /* caption */
-.captions{
+.captions {
   display: flex;
   background-color: #fa751c;
   padding: 14px 20px;
 }
-.left-logo{
+.left-logo {
   margin-left: 90px;
 }
 
-.left-logo,.right-logo{
+.left-logo,
+.right-logo {
   opacity: 0.4;
 }
 
-.right-logo{
+.right-logo {
   margin-left: 30px;
 }
 
-
-.bio{
+.bio {
   margin-top: 20px;
   margin-left: 40px;
 }
 
-.bio h1{
+.bio h1 {
   font-size: 33px;
   color: white;
 }
 
-.bio h1 span{
+.bio h1 span {
   color: #000;
 }
-.bio p{
+.bio p {
   text-align: justify;
   color: white;
-line-height: 1.4;
-font-size: 13px;
+  line-height: 1.4;
+  font-size: 13px;
 }
 
 .payment-container {
@@ -524,7 +522,7 @@ font-size: 13px;
   border-radius: 8px;
   margin-left: 40px;
 }
-.left-bio{
+.left-bio {
   color: #ff7f00;
 }
 
@@ -539,7 +537,7 @@ font-size: 13px;
   font-size: 16px;
   line-height: 1.74;
   margin-bottom: 20px;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
 }
 
 .get-quote-btn {
@@ -565,15 +563,13 @@ font-size: 13px;
   padding-right: 90px;
 }
 
-
 .payment-options {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 30px;
   margin-left: 40px;
   margin-top: 72px;
-  
 }
 
 .payment-card {
@@ -587,7 +583,7 @@ font-size: 13px;
   transition: all 0.2s ease-in;
 }
 
-.payment-card:hover{
+.payment-card:hover {
   color: white;
   background-color: #ff7f00;
 }
@@ -606,12 +602,12 @@ font-size: 13px;
   margin-bottom: 6px;
 }
 
-.icon-card{
+.icon-card {
   font-size: 47px;
   color: #ff7f00;
 }
 
-.arrow-icon{
+.arrow-icon {
   font-size: 28px;
   background-color: white;
   border: none;
@@ -673,7 +669,7 @@ font-size: 13px;
   padding: 55px 20px;
   max-width: 370px;
   flex: 1;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   border: 1px solid #ff7f00;
   text-align: left;
@@ -688,7 +684,7 @@ font-size: 13px;
 .review-text {
   font-size: 18px;
   margin-bottom: 12px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .review-name {
@@ -773,16 +769,16 @@ font-size: 13px;
 .partner-icon {
   font-size: 2rem;
   color: white;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
-.partner-name{
+.partner-name {
   font-size: 2.2rem;
   padding-left: 20px;
 }
 
 .hero-vehicle-banner {
-  background-image: url('/car.jpg'); 
+  background-image: url("/car.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -810,7 +806,7 @@ font-size: 13px;
 .hero-vehicle-brand-list {
   display: flex;
   gap: 20px;
-  justify-content: center;;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -824,22 +820,22 @@ font-size: 13px;
   border-radius: 20px;
 }
 /* Faqs */
-.faq-section{
+.faq-section {
   background-color: #fff;
   text-align: center;
   padding: 32px 18px;
 }
 
-.faq-head{
+.faq-head {
   color: #ff7f00;
 }
 
-.faq-header h1{
+.faq-header h1 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.faq-qs{
+.faq-qs {
   width: 700px;
   margin-left: 50vh;
 }
@@ -852,48 +848,49 @@ font-size: 13px;
   color: orange;
 }
 
-.faq-question span{
+.faq-question span {
   font-size: 22px;
   color: orange;
 }
 /* captions-shoppng */
-.captions-shopping{
+.captions-shopping {
   display: flex;
   background-color: #fc8739;
 }
-.cap-left-logo{
+.cap-left-logo {
   margin-top: 2rem;
-  margin-bottom:  0px;
+  margin-bottom: 0px;
 }
 
-.cap-left-logo,.cap-right-logo{
+.cap-left-logo,
+.cap-right-logo {
   opacity: 0.4;
 }
 
-.cap-right-logo{
+.cap-right-logo {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 80px;
 }
 
-.cap-bio{
+.cap-bio {
   margin-top: 20px;
   margin-left: 70px;
   text-align: center;
 }
 
-.cap-bio h1{
+.cap-bio h1 {
   font-size: 34px;
   color: white;
 }
 
-.cap-bio h1 span{
+.cap-bio h1 span {
   color: #000;
 }
-.cap-bio p{
+.cap-bio p {
   color: white;
-line-height: 1.4;
-font-size: 17px;
+  line-height: 1.4;
+  font-size: 17px;
 }
 
 /* blogs */
@@ -931,8 +928,8 @@ font-size: 17px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-.blog-image-wrapper{
-    position: relative;
+.blog-image-wrapper {
+  position: relative;
 }
 
 .blog-image {
@@ -944,7 +941,7 @@ font-size: 17px;
   position: absolute;
   top: 12px;
   left: 12px;
-  background-color: #FA751C;
+  background-color: #fa751c;
   color: #fff;
   padding: 6px 12px;
   font-size: 0.9rem;
@@ -976,49 +973,49 @@ font-size: 17px;
   font-weight: bold;
 }
 
-.blog-readmore span{
+.blog-readmore span {
   text-decoration: underline black;
 }
-.comments{
+.comments {
   margin-left: 17px;
 }
 
-.blog-arrow{
+.blog-arrow {
   color: orange;
   text-decoration: none !important;
 }
 
 /* payment */
-.payment{
+.payment {
   display: flex;
   background-color: #fa751c;
   padding: 14px 20px;
 }
 
-.paymentrightlogo{
+.paymentrightlogo {
   margin-left: 50vh;
   opacity: 0.7;
 }
 
-.paymentbio{
+.paymentbio {
   text-align: center;
   margin-top: 20px;
   margin-left: 28rem;
 }
 
-.paymentbio h1{
+.paymentbio h1 {
   font-size: 33px;
   color: white;
 }
 
-.paymentbio h1 span{
+.paymentbio h1 span {
   color: #000;
 }
-.paymentbio p{
+.paymentbio p {
   text-align: justify;
   color: white;
-line-height: 1.4;
-font-size: 13px;
+  line-height: 1.4;
+  font-size: 13px;
 }
 
 .paymentbutton {
@@ -1063,7 +1060,8 @@ font-size: 13px;
   position: relative;
   z-index: 1;
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -1072,7 +1070,6 @@ html, body {
 * {
   box-sizing: border-box;
 }
-
 
 @media (max-width: 768px) {
   /* Navbar */
@@ -1099,7 +1096,7 @@ html, body {
     position: absolute;
     left: 0;
     top: 60px;
-    background: rgba(56,51,51,0.95);
+    background: rgba(56, 51, 51, 0.95);
     z-index: 99;
   }
   .menu-links.open {
@@ -1119,7 +1116,7 @@ html, body {
     display: block;
     padding: 0.5rem 0;
   }
-  .btn-filled{
+  .btn-filled {
     margin-left: 70px;
   }
 
@@ -1129,10 +1126,10 @@ html, body {
     padding: 30px 16px;
     gap: 20px;
   }
-  .support-email h2{
+  .support-email h2 {
     font-size: 2.2vh;
   }
-  .support-email{
+  .support-email {
     margin-left: -80px;
   }
   .footer-left,
@@ -1144,10 +1141,7 @@ html, body {
     flex-direction: column;
     gap: 16px;
   }
-  .hero-vehicle-brand-item{
-    display: none;
-  }
-  .social-icons{
+  .social-icons {
     margin-left: 0;
     min-width: unset;
     max-width: unset;
@@ -1155,7 +1149,6 @@ html, body {
     gap: 16px;
   }
 
- 
   .hero-section,
   .how-work {
     position: static !important;
@@ -1167,10 +1160,17 @@ html, body {
     text-align: center;
   }
 
-  .hero-section h1 { font-size: 24px; }
-  .hero-section p { font-size: 13px; }
+  .hero-section h1 {
+    font-size: 24px;
+  }
+  .hero-section p {
+    font-size: 13px;
+  }
+  .hero-section h1,
+  .car-form{
+    margin-top: 50%;
+  }
 
-  /* Video, Payment, Review, Stats, Partners, FAQ, Blog */
   .video-appraisal,
   .payment-container,
   .review-row,
@@ -1182,31 +1182,100 @@ html, body {
     margin: 0 !important;
     width: 100% !important;
   }
-  .partners-grid{
+  .partners-grid {
     flex-direction: column !important;
     gap: 16px !important;
     padding: 12px !important;
     margin: 0 !important;
     width: 0% !important;
   }
-  .faq-qs { margin-left: 0 !important; width: 100% !important; }
+  .faq-qs {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .car-form{
+    margin-left: 40% !important;
+  }
 
-  .bio, .paymentbio, .cap-bio {
+  .bio,
+  .paymentbio,
+  .cap-bio {
     margin: 0 !important;
     padding: 10px !important;
     font-size: 13px !important;
     text-align: center !important;
   }
-  .bio h1, .paymentbio h1, .cap-bio h1 { font-size: 18px !important; }
-  .bio p, .paymentbio p, .cap-bio p { font-size: 11px !important; }
+  .bio h1,
+  .paymentbio h1,
+  .cap-bio h1,
+  .how-work h2,
+  .payment-left h1,
+  .review-heading,
+  .partners-head,
+  .hero-vehicle-title,
+  .blog-heading {
+    font-size: 18px !important;
+  }
+  .box h3{
+    font-size: 13px !important;
+  }
+  .bio p,
+  .paymentbio p,
+  .cap-bio p,
+  .payment-left p,
+  .review-row p,
+  .box p,
+  .faq-question,
+  .blog-subheading {
+    font-size: 10px !important;
+  }
 
-  /* Images */
-  .left-logo img, .right-logo img, .paymentrightlogo img, .cap-left-logo img, .cap-right-logo img {
+  .partner-card p{
+    font-size: 18px !important;
+  }
+
+  .payment-left{
+    margin-left: 0px;
+  }
+
+  .left-logo,
+  .right-logo {
+    margin-left: 0px; 
+    margin-top: 17%;
+  }
+  .cap-right-logo-img{
+    display: none;
+  }
+  .bio p {
+    width: 100%;
+  }
+  .left-logo img,
+  .right-logo img,
+  .paymentrightlogo img,
+  .cap-left-logo-img,
+  .cap-right-logo-img {
     max-width: 60px !important;
     height: auto !important;
     margin: 0 !important;
   }
-  .paymentbutton span{
+  
+  .paymentbutton span {
     width: 140px;
+  }
+  .hero-vehicle-brand-list{
+    gap: 0px;
+  }
+  
+  .hero-vehicle-logo {
+    width: auto;
+    height: 70px;
+  }
+
+  .appraisal-img {
+    width: auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }

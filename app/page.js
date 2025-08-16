@@ -15,6 +15,7 @@ import {
 import { MdPhoneAndroid, MdOutlineAttachMoney } from "react-icons/md";
 import { BiTransferAlt } from "react-icons/bi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import BusyBanner from "./components/busy";
 
 const page = () => {
   const reviews = [
@@ -147,6 +148,7 @@ const page = () => {
             width={400}
             height={200}
             alt="Video call example"
+            className="appraisal-img"
           />
         </div>
 
@@ -182,36 +184,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="captions">
-        <div className="left-logo">
-          <Image
-            src="/logo-bio.png"
-            width={240}
-            height={220}
-            alt="Company Logo"
-          />
-        </div>
-        <div className="bio">
-          <h1>
-            WE UNDERSTAND <span>HOW BUSY YOU ARE.</span>
-          </h1>
-          <p>
-            We can do videocall appraisal to purchase your vehicle from the
-            convenience of your home, or anywhere you have signal. Our
-            <br />
-            licensed appraisers will handle everything from paperwork to
-            payment.
-          </p>
-        </div>
-        <div className="right-logo">
-          <Image
-            src="/logo-bio.png"
-            width={240}
-            height={220}
-            alt="Company Logo"
-          />
-        </div>
-      </div>
+      <BusyBanner/>
 
       <section className="payment-container">
         <div className="payment-left">
@@ -369,6 +342,7 @@ const page = () => {
             width={240}
             height={200}
             alt="Company Logo"
+            className="cap-left-logo-img"
           />
         </div>
         <div className="cap-bio">
@@ -385,6 +359,7 @@ const page = () => {
             width={240}
             height={220}
             alt="Company Logo"
+            className="cap-right-logo-img"
           />
         </div>
       </section>
